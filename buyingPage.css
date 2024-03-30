@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body{
+    min-height: 100vh;
+}
+/* 
+====
+Hero
+====
+*/
+.hero-buy{
+    height: 100px;
+    margin-bottom: 50px;
+    /* background: blueviolet;
+     */
+}
+.hero-parent-buy{
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 0 40px; 
+}
+h1{
+    color: white;
+}
+.material-symbols-outlined.md-50{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    height: 60px;
+    background: white;
+    border-radius:5px;
+    position: relative;
+}
+.note-buy{
+    position: absolute;
+    font-size: 0.7rem;
+    background: red;
+    color: white;
+    top: -10%;
+    right: -10%;
+    height: 20px;
+    border-radius:2px ;
+    padding-top: 3px;
+}
+section{
+    margin-bottom: 30px;
+}
+/* 
+=====
+Check
+=====
+*/
+.check{
+    text-align: center;
+}
+.check-info{
+    margin-bottom: 5px;
+}
+.check-info h1{
+    color: black;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+}
+.btns button{
+    margin: 0 6px;
+    color: white;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 70px;
+    border-radius: 4px;
+}
+#checkOut{
+    background: green;
+}
+#clearCart{
+    background: red;
+}
+#backToHome{
+    display: none;
+    background: black;
+    width: 100px;
+}
+/* 
+====
+Main Style
+====
+*/
+.main-buy{
+    /* border: 1px solid aquamarine; */
+    width: 330px;
+    height: 120px; 
+    margin: 0 auto;
+}
+.clothesContainer-buy{
+    display: flex;
+    border: 1px solid black;  
+    width: 100%;
+    height: 100%; 
+}
+.clothesInfo-buy{
+    /* border: 1px solid rgb(199, 0, 0); */
+    width: 100%;
+}
+.newStyle{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.newStyle h2{
+    font-size: 1.0rem;
+}
+.price-buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    border-radius: 4px;
+}
+.closeIcon{
+    color: rgb(219, 82, 82);
+}
+img{
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 
+======
+Icons BuyPage Ver
+======
+ */
+ aside{
+  margin: 10px 0 15px 5px;
+ }
+.icons-buy{
+    width: 55px;
+    height: 20px;
+    padding: 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#plus-buy{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+}
+#plus-buy::after,#plus-buy::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    width: 10px;
+    height: 2px;
+    border-radius: 3px;
+    background: black;
+}
+#plus-buy::before{
+    transform: rotate(90deg);
+}
+#minus-buy{
+    position: relative;
+    margin-right: 3px;
+}
+#minus-buy::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border-radius: 3px;
+    background: rgb(0, 254, 21);
+}
+#counter-buy{
+    height: 20px;
+    width: 10px;
+}
+/* 
+======
+Price Per Unit
+======
+ */
+ .pricePerUnit{
+    margin-left: 10px;
+ }
+ .pricePerUnit h2{
+    font-size: 1.0rem;
+ }
+ .test{
+    color: blue;
+    width: 200px;
+    height: 200px;
+ }

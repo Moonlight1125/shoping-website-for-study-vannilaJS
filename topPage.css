@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body{
+    min-height: 100vh;
+    /* background: aquamarine; */
+}
+/* 
+=======
+Main Style
+=======
+*/
+.hero{
+    height: 100px;
+    margin-bottom: 50px;
+    /* background: blueviolet;
+     */
+}
+.hero-parent{
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 0 40px; 
+}
+h1{
+    color: white;
+}
+.material-symbols-outlined.md-50{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    height: 60px;
+    background: white;
+    border-radius:5px;
+    position: relative;
+}
+.note{
+    position: absolute;
+    font-size: 0.7rem;
+    background: red;
+    color: white;
+    top: -10%;
+    right: -10%;
+    height: 20px;
+    border-radius:2px ;
+    padding-top: 3px;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
+.clothesContainer{
+    border:1px solid black;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.clothesInfo{
+    margin-top: 20px;
+    padding-left: 10px;
+}
+dl,dd{
+    margin-bottom: 10px;
+}
+dt{
+    margin-bottom: 30px;
+}
+aside{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    align-items: flex-end;
+    height: 70px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+.icons{
+    width: 80px;
+    height: 20px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#plus{
+    position: relative;
+    margin-right: 6px;
+    /* border: 1px solid black; */
+    width: 10px;
+    height: 10px;
+}
+#plus::after,#plus::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    width: 10px;
+    height: 2px;
+    border-radius: 3px;
+    background: black;
+}
+#plus::before{
+    transform: rotate(90deg);
+}
+#minus{
+    position: relative;
+}
+#minus::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border-radius: 3px;
+    background: rgb(0, 254, 21);
+}
+#counter{
+    height: 20px;
+    width: 10px;
+}
+img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
